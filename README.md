@@ -53,11 +53,15 @@ All Levers were gathered by county for the state of Ohio.
 
 # Analysis
 
-We performed two analyses with the available data to best construct our model: a Factor Analysis in Jupyter Notebook (python) and a Regression Analysis to determine coefficient weighting in R (programming language). 
+We performed two analyses with the available data to best construct our model: a Factor Analysis in Jupyter Notebook (python) and a Regression Analysis to determine coefficient weighting in R (programming language). For both, we used a cleaned dataset which removed smaller counties where poverty data was unavailable. 
 
 ## Factor Analysis[^2]
 
-Our Factor Analysis showed:
+We performed a Factor Analysis in order to understand the underlying trends within our data. In order to do that, we compared our data and grouped them based on correlation. The result was two factor groupings: Socioeconomic Status which included metrics such as SNAP usage, poverty levels, depression, and to a lesser extent available yard space; and Digital and Education Connectivity which included metrics such as access to broadband internet and number of library card holders.
+
+![Factor Analysis Plot](https://github.com/scatterplotsandtea/un_datathon_2023/assets/112765834/5a455f5e-e9f4-46c3-bf9e-2d7c2fcb7a2f)
+
+Applying those two factors to our counties, we found Scioto, Mahoning, and Clark counties had the highest positive impact correlation with Socioeconomic Status while Wood, Muskingum, and Tuscarawas counties had the highest positive impact correlation with Digital and Education Connectivity.
 
 ## Regression Analysis
 
