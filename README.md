@@ -80,14 +80,15 @@ For our Regression Analysis, we focused on Positive Mental Health to drive our m
 | Poverty per Capita | Negative | 27.38 |
 | SNAP per Capita | Positive | 97.34 |
 
-# Composite Score
+# Composite Score[^3]
 
-One our analyses were complete, we created a Composite Score for Opportunity. 
+Once our analyses were complete, we created a Composite Score for Opportunity. We calculated the average and then placed counties in ranked order. In addition, we looked at each county based on the two factors we identified earlier to determine where investment was most likely to make an impact.
 
 ![Key Opportunity Factors by County](https://github.com/scatterplotsandtea/un_datathon_2023/assets/112765834/c2a11d33-f39d-494f-b457-99ac49f898a3)
 
 ![Key Opportunity Counties](https://github.com/scatterplotsandtea/un_datathon_2023/assets/112765834/5329ba03-f4f9-49b3-99d4-c78adc78c321)
 
 [^1]: We used the basic modeling technique as described [here](https://hbr.org/2023/05/how-brand-building-and-performance-marketing-can-work-together)
-[^2]: We followed the coding performed [here](https://medium.com/gitconnected/factor-analysis-for-marketing-with-python-f51fbf460c30)
+[^2]: We used the basic coding performed [here](https://medium.com/gitconnected/factor-analysis-for-marketing-with-python-f51fbf460c30)
+[^3]: We used the coding [here](https://medium.com/analytics-vidhya/the-factor-analysis-for-constructing-a-composite-index-2496686fc54c) as a foundation
 
