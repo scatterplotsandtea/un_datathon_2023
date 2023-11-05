@@ -1,0 +1,35 @@
+---
+title: "S&T"
+output: html_document
+date: "2023-11-05"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+data = read.csv('Factor Analysis Data.csv')
+data
+```
+```{r}
+model = lm(benz_dose_pc ~  farm_market_pc + avail_yard_sq_mi + uvi + elec_rate + broad_un_sq_mi + aqi + lib_ct_pc + lib_card_pc + precipitation + poverty_pop_pc + snap_pc, data = data)
+summary(model)
+```
+
+
+```{r}
+summary(model)$r.squared
+```
+
+
+```{r}
+summ(model)
+
+```
+
+
+```{r}
+model$coefficients
+```
+
