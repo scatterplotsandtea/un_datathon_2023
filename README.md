@@ -64,7 +64,7 @@ We performed an Exploratory Factor Analysis in order to understand the underlyin
 
 ## Regression Analysis
 
-For our Regression Analysis, we focused on Positive Mental Health to drive our model weighting. Negative correlations decreased prescriptions per capita scores while positive correlations increased prescriptions per capita scores by county. In our scenario, our goal was to decrease prescriptions per capita. Looking at an example from the numbers below, our data indicated that the higher the number of Farmers Markets in a county, the less prescription Benzodiazepine doses would be issued for that county. 
+For our Regression Analysis, we focused on Positive Mental Health to drive our model weighting. Negative correlations decreased prescriptions per capita scores while positive correlations increased prescriptions per capita scores by county. In our scenario, our goal was to decrease prescriptions per capita. Looking at an example from the numbers below, our data indicated that the higher the number of Farmers Markets in a county, the less prescription Benzodiazepine doses would be issued for that county. These coefficients should be used to forecast prescription doses should the metrics listed change.
 
 | Metric | Correlation | Coefficient |
 | ------------- | ------------- | ------------- | 
