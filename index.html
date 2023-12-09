@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UN Datathon 2023</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="section">
+        <div class="container content">
+            <p class="label">Structural Equation Modeling</p>
+            <h1 class="title">UN Datathon 2023</h1>
+            <p class="subhed">Our team looked to apply Factor Analysis, Structural Equation Modeling, and Composite Measuring to analyze the impact of
+            homegrown food.</p>
+            <p class="byline">By <span>Elizabeth Connor and Jessica Flanagan</span></p>
+            <p class="date">November and December, 2023</p>
+
+            <img src="https://github.com/scatterplotsandtea/un_datathon_2023/blob/main/carrot-2743498_640.jpg?raw=true" width="300"
+                alt="Carrots on a Table">
+            <p class="image__caption">Source: ShireShy on Pixabay.</p>
+
+            <p class="article__text"> This is where all our new pretty stuff and storytelling goes.</p>
+
+            <h2>Methodology</h2>
+            <h3>Project Overview</h3>
+            
+            <p class="article__text"> Looking at the UN Sustainable Development Goals, the challenge was to create a localized solution to help reach goals in one (or more) of <a href="https://unsdg.un.org/resources/six-transitions-investment-pathways-deliver-sdgs">six key areas</a> - food systems, energy access and affordability, digital connectivity, education, jobs and social protection, and climate change and biodiversity. The solution needed to be local, but applicable/scalable globally.</p>
+            
+            <p class="article__text">In our initial Structural Modeling, we looked at four key categories: purpose (longterm commitment to cultural values), emotional attributes (associations made by residents to backyard gardening), functional benefits (tangible features), and experiential qualities (intangible features). We then looked to apply 'Activation Levers' to each of these concepts. These Levers were quantifiable metrics through which we could realize our progress and rank in each of our four key categories.</p>
+
+            <p class="article__text">We chose Activation Levers within Product (the actual vegetable), Price, Place, People, and Proximity. Once these Levers and Metrics were ideated, we set about finding the available data. Particular emphasis was placed on data sources that were scalable, so we focused on .gov sources when available.</p>
+
+            <div style="min-height:525px">
+                <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/yaSVF/embed.js?v=1"
+                    charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/yaSVF/full.png" alt="" /></noscript>
+                <br></br>
+            </div>
+            
+            <p class="article__text">Because of data limitations, both due to Datathon hours limitations and lack of public data sources, we revised our
+            model to the following:</p>
+
+            <div style="min-height:519px">
+                <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/2VDWV/embed.js?v=1"
+                    charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/2VDWV/full.png" alt="" /></noscript>
+                <br></br>
+                </div>
+
+            <p class="article__text">All Levers were gathered by county for the state of Ohio.</p>
+
+            <h3>Analysis</h3>
+
+            <p class="article__text">We performed two analyses with the available data to best construct our model: a Factor Analysis in Jupyter Notebook
+            (python) and a Regression Analysis to determine coefficient weighting in R (programming language). For both, we used a cleaned dataset which removed smaller counties where poverty data was unavailable.</p>
+
+            <p class="article__text">We performed an Exploratory Factor Analysis in order to understand the underlying trends within our data. In order to do
+            that, we compared our data and grouped them based on correlation. The result was two factor groupings: Socioeconomic
+            Status which included metrics such as SNAP usage, poverty levels, depression, and to a lesser extent available yard
+            space; and Digital and Education Connectivity which included metrics such as access to broadband internet and number of
+            library card holders.</p>
+
+            <p class="article__text">For our Regression Analysis, we focused on Positive Mental Health to drive our model weighting. Negative correlations
+            decreased prescriptions per capita scores while positive correlations increased prescriptions per capita scores by
+            county. In our scenario, our goal was to decrease prescriptions per capita. Looking at an example from the numbers
+            below, our data indicated that the higher the number of Farmers Markets in a county, the less prescription
+            Benzodiazepine doses would be issued for that county. These coefficients should be used to forecast prescription doses
+            should the metrics listed change.</p>
+
+            <p class="article__text">Once our analyses were complete, we created a Composite Score for Opportunity. We calculated the average and then placed
+            counties in ranked order. In addition, we looked at each county based on the two factors we identified earlier to
+            determine where investment was most likely to make an impact.</p>
+
+            <p class="article__text">To see more details and access our data, please visit our <a href="https://github.com/scatterplotsandtea/un_datathon_2023">GitHub</a>.
+            </p>
+
+        </div>
+    </div>
+</body>
+
+</html>
